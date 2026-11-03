@@ -24,18 +24,22 @@ no celular como app (PWA), sem precisar compilar nada.
 O app abre em tela cheia, com o ícone do Moneta, e funciona sem internet (as cotações
 automáticas precisam de internet).
 
-## 3. Ligar as cotações automáticas (brapi)
+## 3. Cotações automáticas
 
-1. Crie uma conta grátis em **brapi.dev** e copie o **token** do painel (dashboard).
-2. No app, abra a aba **Resumo**, abra **Cotações automáticas (brapi)**, cole o token e toque em **Salvar**.
-3. Abra a aba **Investimentos**: as cotações são buscadas ao abrir o app e a cada 30 minutos,
-   com o app aberto. O botão de atualizar, no card Posição, força uma nova busca.
+- **Criptomoedas:** são buscadas automaticamente na CoinGecko, sem cadastro e sem token, em reais.
+  Use o código da moeda (BTC, ETH, SOL...) no campo "Moeda".
+- **Ações e FIIs:** usam a brapi, que precisa de um token grátis.
+  1. Crie uma conta em **brapi.dev** e copie o **token** do painel.
+  2. No app, abra a aba **Investimentos**, vá até o fim da página, abra **Cotações automáticas (brapi)**,
+     cole o token e toque em **Salvar**.
+- As cotações são buscadas ao abrir o app e a cada 30 minutos com o app aberto. O botão de atualizar,
+  no card Posição, força uma nova busca.
 
-Plano gratuito da brapi: 15.000 consultas por mês, 1 ativo por consulta e dados atualizados
-a cada 30 minutos. O app respeita esse intervalo para não gastar a cota à toa.
+Plano gratuito da brapi: 15.000 consultas por mês, 1 ativo por consulta e dados atualizados a cada
+30 minutos. O app respeita esse intervalo para não gastar a cota à toa.
 
-**O que fica de fora:** ativos do **exterior** (como VOO) não existem na brapi. Para esses,
-digite a cotação em reais na linha do ativo, na Posição. Renda fixa e caixa seguem pelo valor aplicado.
+**O que fica de fora:** ativos do **exterior** (como VOO) não existem na brapi. Para esses, digite a
+cotação em reais na linha do ativo, na Posição. Renda fixa e caixa seguem pelo valor aplicado.
 
 ## 4. Seus dados
 
